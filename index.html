@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" rel="stylesheet">
+
+
+
+
+    <title>Pedra, Papel e Tesoura</title>
+
+
+</head>
+
+
+
+<body>
+
+    <h1><img src=""></h1>
+
+                        
+    <div id="jokenpo">
+        <div id="jogador1">
+            <h2 id="nome-jogador">Jogador</h2> 
+            <span id="pontosJogador">0</span>
+            <ul id="opçoes">
+                <li>
+                    <a id="pedra" onclick="jogar(1)">
+                    <img src="imgs/pedra-off.png"
+             height="100" width="100" onclick="PedraAcesa()" id="rock"></a>
+                </li>
+                <li>
+                    <a id="papel" onclick="jogar(2)">
+                    <img src="imgs/papel-off.png"  onclick="PapelAceso()" id="paper" height="100" width="100" ></a>
+                </li>
+                <li>
+                    <a id="tesoura" onclick="jogar(3)">
+                    <img src="imgs/tesoura-off.png" onclick="TesouraAcesa()" height="100" width="100" id="sisor"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="versus">VS</div>
+        <div id="CPU">
+            <h2 id="nome-computador">Lorde Pcnatos</h2> 
+            <span id="pontosCPU">0</span>
+            <ul id="opçoes-com">
+                <li>
+                    <a id="tesoura-com">
+                    <img src="imgs/tesoura-off.png" height="100" width="100" id="tesourapc"></a>
+                </li>
+                <li>
+                    <a id="papel-com">
+                    <img src="imgs/papel-off.png" height="100" width="100" id="papelpc"></a>
+                </li>
+                <li>
+                    <a id="pedra-com">
+                    <img src="imgs/pedra-off.png" height="100" width="100" id="pedrapc"></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    
+    <div id="mensagens">&nbsp;</div>
+
+    <footer>
+        
+    </footer>
+        
+
+<script src="js/jokenpo.js"> </script>
+
+</body>
+</html>
